@@ -1,0 +1,144 @@
+:root {
+  --LightCyan: hsl(193, 38%, 86%);
+  --NeonGreen: hsl(150, 100%, 66%);
+  --GrayishBlue: hsl(217, 19%, 38%);
+  --DarkGrayishBlue: hsl(217, 19%, 24%);
+  --DarkBlue: hsl(218, 23%, 16%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  background-color: var(--DarkBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--GrayishBlue);
+  position: relative;
+  max-width: 50rem;
+  width: 50rem;
+  padding: 4rem 6rem;
+  border-radius: 2rem;
+}
+
+.container h1 {
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  color: var(--NeonGreen);
+  margin-bottom: 2rem;
+}
+
+.container p {
+  font-size: 2.5rem;
+  color: var(--LightCyan);
+  margin-bottom: 5rem;
+  text-align: center;
+}
+.line {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.line-left {
+  height: 0.1rem;
+  width: 15rem;
+  background-color: var(--LightCyan);
+  opacity: 0.5;
+}
+
+.h-line-1 {
+  height: 0.8rem;
+  width: 2rem;
+  background-color: var(--LightCyan);
+  transform: rotate(270deg);
+  border-radius: 10px 10px 10px 10px;
+  position: absolute;
+  left: 19rem;
+  top: -5px;
+}
+
+.h-line-2 {
+  height: 0.8rem;
+  width: 2rem;
+  background-color: var(--LightCyan);
+  transform: rotate(270deg);
+  border-radius: 10px 10px 10px 10px;
+  position: absolute;
+  left: 17rem;
+  top: -5px;
+}
+
+.line-right {
+  height: 0.1rem;
+  width: 15rem;
+  background-color: var(--LightCyan);
+  opacity: 0.5;
+}
+
+.btn-container {
+  height: 5rem;
+  width: 5rem;
+  background-color: var(--NeonGreen);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  bottom: -2.5rem;
+}
+
+.btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: transparent;
+}
+
+.btn i {
+  font-size: 2.5rem;
+}
+
+@media (max-width: 640px) {
+  .container {
+    width: 35rem;
+  }
+
+  .line-left {
+    width: 9rem;
+  }
+
+  .h-line-1 {
+    left: 9.5rem;
+  }
+
+  .h-line-2 {
+    left: 11rem;
+  }
+
+  .line-right {
+    width: 9rem;
+  }
+}
